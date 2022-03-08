@@ -1,0 +1,9 @@
+	.ORIG 	x0000
+	GETC	R0
+	LD	R1 MASK
+	AND	R0 R0 R1
+	PUTC	R0
+	HALT
+MASK	.FILL	xFFDF
+	.END
+;assembly and run tested good
